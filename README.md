@@ -1,5 +1,4 @@
 Awesome html link animations
 ===
 
-
-[Preview](todo)
+[Preview](https://petrov-aa.github.io/html-link-animations/)
