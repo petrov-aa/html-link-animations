@@ -1,0 +1,49 @@
+body {
+    background: rgb(27, 27, 27);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    color: rgb(200, 203, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.link span {
+    display: block;
+}
+
+@keyframes up-out {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+@keyframes up-in {
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.link-up-out-in:hover span {
+    animation: up-out .15s ease-out forwards, up-in .15s ease-out .15s forwards;
+}
